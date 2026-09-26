@@ -20,7 +20,7 @@ int main() {
     cin >> platinumBefore >> platinumAfter;
     int platinumPromotion = platinumAfter - platinumBefore;
     int goldPromotion = platinumPromotion + (goldAfter - goldBefore);
-    int silverPromotion = platinumPromotion + (goldAfter - goldBefore) + (silverAfter - silverBefore);
+    int silverPromotion = goldPromotion + (silverAfter - silverBefore);
     cout << silverPromotion << "\n" << goldPromotion << "\n" << platinumPromotion << "\n";
     return 0;
 }
